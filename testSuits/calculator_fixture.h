@@ -22,5 +22,10 @@ INSTANTIATE_TEST_CASE_P(
                 1
                 )
         );
+class FooEnvironment:public testing::Environment
+{
+    void SetUp() override;
+    void TearDown() override;
+};
 
 #endif //GTEST_1_CALCULATOR_FIXTURE_H
