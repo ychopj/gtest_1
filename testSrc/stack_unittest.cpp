@@ -4,6 +4,7 @@
 #include<gtest/gtest.h>
 #include<stack>
 #include<string>
+#include<iostream>
 using namespace std;
 
 TEST(testStack,simpletest){
@@ -94,3 +95,5 @@ TEST_F(StackTest, testPop2)
     int val = st.top();
     EXPECT_EQ(56, val);
 }
+
+
